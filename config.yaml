@@ -139,7 +139,7 @@ params:
 
         gitalk:
             owner: "IskXCr"
-            admin: ["IskXCr"]
+            admin: "IskXCr"
             repo: "blog"
             clientID: "2d5f811095c5b09bc1c4"
             clientSecret: "9f5465a837666c4719850c3e3348d24777e30f6a"
