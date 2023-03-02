@@ -1,6 +1,6 @@
 +++
-author = "Hugo Authors"
-title = "Introduction to The Library of A Miko"
+author = "IskXCr"
+title = "Introduction to Miko's Library"
 date = "2023-03-02"
 description = "This is an introduction page for testing basic functions."
 tags = [

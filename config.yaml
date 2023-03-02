@@ -2,12 +2,12 @@ baseurl: https://iskxcr.github.io/blog
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
-title: The Library of A Miko
+title: Miko's Library
 
 languages:
     en:
         languageName: English
-        title: The Library of A Miko
+        title: Miko's Library
         description: What are you seeking for? xD
         weight: 1
     zh-cn:
@@ -71,7 +71,7 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: true
+        enabled: false
         provider: disqus
 
         disqusjs:
