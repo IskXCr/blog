@@ -20,7 +20,11 @@ This article is just for testing the basic functions!
 ## Headings
 
 Testing the Pythagorean Theorem.
-Let $a$, $b$ and $c$ be the length of three edges of a right triangle, and $c$ for the length of the hypotenuses. Then, we have
+Let $a$, $b$ and $c$ be the length of three edges of a right triangle, and $c$ for the length of the hypotenuse. Then, we have
 $$
-a^2+b^2=c^2
+a^2+b^2=c^2.
+$$
+
+$$
+\frac{\partial L}{\partial \boldsymbol{r}}=\frac{e}{c}(\boldsymbol{v} \cdot \nabla) \boldsymbol{A}+ \frac{e}{c}\boldsymbol{v} \times \text{rot} \boldsymbol{A} -e \cdot \text{grad} \varphi
 $$
