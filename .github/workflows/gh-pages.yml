@@ -9,7 +9,7 @@ on:
 jobs:
   deploy:
     permissions:
-      content: write
+      contents: write
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
