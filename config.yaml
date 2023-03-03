@@ -44,11 +44,11 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:  # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
         since: 2020
-        customText:
+        customText: 全ての終わりに愛があるなら。
 
     dateFormat:
         published: Jan 02, 2006
@@ -200,9 +200,16 @@ menu:
         - identifier: github
           name: GitHub
           url: https://github.com/IskXCr
+          weight: 20
           params:
               icon: brand-github
-
+              
+        - identifier: email
+          name: email
+          url: mailto:iskxcr@outlook.com
+          weight: 30
+          params:
+              icon: mail-icon
         # - identifier: twitter
         #   name: Twitter
         #   url: https://twitter.com
