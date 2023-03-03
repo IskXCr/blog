@@ -17,6 +17,9 @@ image = "https://cdna.artstation.com/p/assets/images/images/036/834/256/large/om
 Testing lyrics.
 <!--more-->
 
+**Bold font**: **桜流し**
+
+Regular font: 桜流し
 
 > 開いたばかりの花が散るのを
 >
