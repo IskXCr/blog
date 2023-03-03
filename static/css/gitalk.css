@@ -1023,13 +1023,13 @@
   font-size: 0.875em;
   word-wrap: break-word;
   resize: vertical;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   outline: none;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 .gt-container .gt-header-textarea:hover {
-  background-color: #fbfbfb;
+  background-color: #fcfcfc;
 }
 .gt-container .gt-header-preview {
   padding: 0.75em;
@@ -1131,11 +1131,15 @@
   overflow: auto;
   -webkit-transition: all ease 0.25s;
   transition: all ease 0.25s;
+  border-radius: 10px;
 }
-.gt-container .gt-comment-content:hover {
-  -webkit-box-shadow: 0 0.625em 3.75em 0 #f4f4f4;
-          box-shadow: 0 0.625em 3.75em 0 #f4f4f4;
-}
+
+/* Disabled hover effect */
+/* .gt-container .gt-comment-content:hover {
+  -webkit-box-shadow: 0 0.625em 3.75em 0 #a1a1a1;
+          box-shadow: 0 0.625em 3.75em 0 #a1a1a1;
+} */
+
 @media (max-width: 479px) {
   .gt-container .gt-comment-content {
     margin-left: 0.875em;
@@ -1255,12 +1259,12 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
-  color: #24292e;
+  color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
-  background-color: #FFFFFF;
+  /* background-color: #ACACAC;  */
   filter: invert(1);
 }
 [data-scheme=dark] .markdown-body table th, .markdown-body table td {
@@ -1299,7 +1303,7 @@
   color: #ffffff;
 }
 [data-scheme=dark] .gt-container .gt-header-textarea:hover {
-  background-color: #00000071;
+  background-color: #424242;
 }
 [data-scheme=dark] .gt-container .gt-user .gt-ico svg {
     fill: #ffffff;
@@ -1308,7 +1312,7 @@
     position: absolute;
     right: 0;
     top: 2.375em;
-    background: rgb(0, 0, 0);
+    background: #424242;
     display: inline-block;
     border: 1px solid #222222;
     padding: 0.625em 0;
@@ -1324,7 +1328,7 @@
           flex: 1;
   margin-left: 1.25em;
   padding: 0.75em 1em;
-  background-color: #000000;
+  background-color: #424242;
   overflow: auto;
   -webkit-transition: all ease 0.25s;
   transition: all ease 0.25s;
