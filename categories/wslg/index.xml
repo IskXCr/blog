@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wslg on Miko's Library</title><link>https://iskxcr.github.io/blog/categories/wslg/</link><description>Recent content in wslg on Miko's Library</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 08 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://iskxcr.github.io/blog/categories/wslg/index.xml" rel="self" type="application/rss+xml"/><item><title>Configure WSLg to Display GUI Application on Windows 11</title><link>https://iskxcr.github.io/blog/p/configure-wslg-to-display-gui-application-on-windows-11/</link><pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate><guid>https://iskxcr.github.io/blog/p/configure-wslg-to-display-gui-application-on-windows-11/</guid><description>&lt;img src="https://iskxcr.github.io/blog/p/configure-wslg-to-display-gui-application-on-windows-11/abstract.png" alt="Featured image of post Configure WSLg to Display GUI Application on Windows 11" />&lt;p>Yesterday I googled for about 2 hours on how to display GUI applications from wsl2 (Ubuntu 22.04) in Windows 11.&lt;/p>
+&lt;p>I have tried installing vcxsrv, but it continuously warns that it cannot bind its listener to the corresponding port. Searching for entries about vcxsrv in the inbound rules section of the &lt;em>Windows Defender Firewall with Advanced Security&lt;/em> gives an empty result. Also I am not able to communicate with Windows on WSL because of the Windows Defender Firewall.&lt;/p>
+&lt;p>I installed WSL through command line, and as the official document &lt;a class="link" href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps" target="_blank" rel="noopener"
+>Run Linux GUI apps with WSL&lt;/a> says the experience is out-of-the-box, I guessed there might be some problems with my configuration.&lt;/p>
+&lt;p>Eventually I came across a post on reddit &lt;a class="link" href="https://www.reddit.com/r/wsl2/comments/y7epv4/cant_get_wslg_to_work_in_windows_11_no_mntwslg/" target="_blank" rel="noopener"
+>Can&amp;rsquo;t get WSLg to work in Windows 11 (no /mnt/wslg/ directory). Tried multiple solutions but no luck.&lt;/a>, in which it says to enable GUI support for WSL2 installed through command line interface, simply edit &lt;code>%USERPROFILE%\.wslconfig&lt;/code> file and change &lt;code>guiApplications&lt;/code> to &lt;code>true&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[wsl2]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">guiApplications = false # change it to **true**
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This solves the problem.&lt;/p></description></item></channel></rss>
